@@ -32,10 +32,6 @@
     <link rel="stylesheet" type="text/css" href="style/css/font/font2.css" />
   </head>
   <style>
-    h1 {
-      text-align: center;
-    }
-
     input {
       padding: 10px;
       width: 100%;
@@ -346,15 +342,35 @@
                     <div class="form-row tab">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input
-                            id="form_name"
-                            type="text"
-                            name="website"
-                            class="form-control"
-                            placeholder="Website URL *"
-                            required="required"
-                            data-error="Website URL is required."
-                          />
+                          <div style="display: flex">
+                            <input
+                              id="form_name"
+                              type="text"
+                              name="website"
+                              class="form-control"
+                              placeholder="Website *"
+                              required="required"
+                              data-error="Website is required."
+                              onchange="validateForm()"
+                            />
+
+                            <div id="valid-check" style="display: none">
+                              <svg
+                                stroke="green"
+                                fill="green"
+                                stroke-width="0"
+                                viewBox="0 0 1024 1024"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
@@ -364,15 +380,35 @@
                     <div class="form-row tab">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input
-                            id="form_name"
-                            type="text"
-                            name="name"
-                            class="form-control"
-                            placeholder="Full Name *"
-                            required="required"
-                            data-error="Full Name is required."
-                          />
+                          <div style="display: flex">
+                            <input
+                              id="form_email"
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              placeholder="Email *"
+                              required="required"
+                              data-error="Valid email is required."
+                              onchange="validateForm()"
+                            />
+
+                            <div id="valid-check" style="display: none">
+                              <svg
+                                stroke="green"
+                                fill="green"
+                                stroke-width="0"
+                                viewBox="0 0 1024 1024"
+                                height="1em"
+                                width="1em"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
@@ -383,13 +419,11 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <input
-                            id="form_email"
-                            type="email"
-                            name="email"
+                            id="form_phone"
+                            type="tel"
+                            name="phone"
                             class="form-control"
-                            placeholder="Email *"
-                            required="required"
-                            data-error="Valid email is required."
+                            placeholder="Cell Phone Number *"
                           />
                           <div class="help-block with-errors"></div>
                         </div>
@@ -401,11 +435,13 @@
                       <div class="col-md-12">
                         <div class="form-group">
                           <input
-                            id="form_phone"
-                            type="tel"
-                            name="phone"
+                            id="form_name"
+                            type="text"
+                            name="name"
                             class="form-control"
-                            placeholder="Phone"
+                            placeholder="Full Name *"
+                            required="required"
+                            data-error="Full Name is required."
                           />
                           <div class="help-block with-errors"></div>
                         </div>
@@ -1206,6 +1242,7 @@
           valid = true;
         x = document.getElementsByClassName("tab");
         y = x[currentTab].getElementsByTagName("input");
+        let validEle = document.getElementById("valid-check");
         // A loop that checks every input field in the current tab:
         for (i = 0; i < y.length; i++) {
           // If a field is empty...
@@ -1220,8 +1257,12 @@
         if (valid) {
           document.getElementsByClassName("step")[currentTab].className +=
             " finish";
+
+          validEle.style.display = "block";
         }
         return valid; // return the valid status
+
+        // This function will figure out which tab to display
       }
 
       function fixStepIndicator(n) {
