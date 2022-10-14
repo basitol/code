@@ -478,14 +478,6 @@
                       <button
                         type="button"
                         class="btn btn-red"
-                        id="prevBtn"
-                        onclick="nextPrev(-1)"
-                      >
-                        Previous
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-red"
                         id="nextBtn"
                         onclick="nextPrev(1)"
                       >
@@ -1201,16 +1193,17 @@
         let x = document.getElementsByClassName("tab");
         x[n].style.display = "block";
         // ... and fix the Previous/Next buttons:
-        if (n == 0) {
-          document.getElementById("prevBtn").style.display = "none";
-        } else {
-          document.getElementById("prevBtn").style.display = "inline";
-        }
-        if (n == x.length - 1) {
-          document.getElementById("nextBtn").innerHTML = "Submit";
+
+        console.log(x, n);
+
+        if (n == 3) {
+          document.getElementById("nextBtn").innerHTML = "Email Report";
         } else {
           document.getElementById("nextBtn").innerHTML = "Next";
         }
+
+        // if on last tab, show submit button
+
         // ... and run a function that will display the correct step indicator:
         fixStepIndicator(n);
       }
@@ -1261,6 +1254,13 @@
           validEle.style.display = "block";
         }
         return valid; // return the valid status
+
+        // This function will figure out which tab to display
+      }
+
+      function validateEmail(email) {
+        let re = /\S+@\S+\.\S+/;
+        return re.test(email);
 
         // This function will figure out which tab to display
       }
