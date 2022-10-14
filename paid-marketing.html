@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="style/images/favicon.png" />
+    <title>Nanoqode: Comprehensive SEO & SEM Tools</title>
+    <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/plugins.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/revolution/css/settings.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/revolution/css/layers.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/revolution/css/navigation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/type/type.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style/css/color/cobalt.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style/css/font/font2.css" />
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 1px solid #aaaaaa;
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+      background-color: #ffdddd;
+    }
+
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+
+    button {
+      background-color: blue;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    #prevBtn {
+      background-color: #bbbbbb;
+    }
+
+    /* Make circles that indicate the steps of the form: */
+    .step {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    .step.active {
+      opacity: 1;
+    }
+
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+      background-color: #04aa6d;
+    }
+  </style>
+  <body class="box-layout">
+    <div class="content-wrapper">
+      <nav class="navbar absolute transparent navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html"><img src="style/images/logo.png" alt="" /></a>
+          </div>
+          <div class="navbar-other ml-auto order-lg-3">
+            <ul
+              class="navbar-nav flex-row align-items-center"
+              data-sm-skip="true"
+            >
+              <li class="nav-item">
+                <div class="navbar-hamburger d-lg-none d-xl-none ml-auto">
+                  <button
+                    class="hamburger animate plain"
+                    data-toggle="offcanvas-nav"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+              </li>
+              <li class="dropdown search-dropdown position-static nav-item">
+                <a
+                  href="#"
+                  role="button"
+                  class="collapse-toggle"
+                  data-toggle="collapse"
+                  data-target=".search-dropdown-menu"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><i class="jam jam-search"></i
+                ></a>
+                <div class="dropdown-menu search-dropdown-menu w-100 collapse">
+                  <div class="form-wrapper">
+                    <form class="inverse-text">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search something"
+                      />
+                    </form>
+                    <!-- /.search-form -->
+                    <i class="dropdown-close jam jam-close"></i>
+                  </div>
+                  <!-- /.form-wrapper -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <button class="plain" data-toggle="offcanvas-info">
+                  <i class="jam jam-info"></i>
+                </button>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-other -->
+          <div class="navbar-collapse offcanvas-nav">
+            <div class="offcanvas-header d-lg-none d-xl-none">
+              <a href="index.html"
+                ><img
+                  src="#"
+                  srcset="
+                    style/images/logo-light.png    1x,
+                    style/images/logo-light@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+              <button class="plain offcanvas-close offcanvas-nav-close">
+                <i class="jam jam-close"></i>
+              </button>
+            </div>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!">Websites</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="web-development"
+                      >Web Design</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="dropdown-item"
+                      href="mobile-application-development"
+                      >Mobile App Development</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="software-development"
+                      >Software Development</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="ecommerce-shopify-solutions"
+                      >Ecommerce & Shopify Solutions</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!">Marketing</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="search-engine-optimization"
+                      >Search Engine Optimization</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="paid-marketing"
+                      >Paid Marketing</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="social-media-management"
+                      >Social Media Management</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="telephone-plan"
+                  >Telephony</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="web-hosting"
+                  >Hosting</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="blog">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#!">About</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="overview">Overview</a></li>
+                  <li><a class="dropdown-item" href="careers">Caeers @</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+            <li class="nav-item d-none d-lg-block pl-0">
+              <a href="tel:+18003612961" class="btn btn-blue m-0"
+                >+1(800)361-2961</a
+              >
+            </li>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+      <div class="offcanvas-info inverse-text">
+        <button class="plain offcanvas-close offcanvas-info-close">
+          <i class="jam jam-close"></i>
+        </button>
+        <a href="index.html"
+          ><img
+            src="#"
+            srcset="
+              style/images/logo-light.png    1x,
+              style/images/logo-light@2x.png 2x
+            "
+            alt=""
+        /></a>
+        <div class="space30"></div>
+        <p>
+          Nanoqode services are designed to meet modern digital business needs.
+          From getting your company up-to-specs on security, deploying custom
+          solutions, managing you marketing strategy and many more.
+        </p>
+        <div class="space20"></div>
+        <div class="widget">
+          <h5 class="widget-title">Contact Info</h5>
+          <address>
+            888 Sargent Ave<br />
+            Winnipeg, Manitoba, R3E 0C7, Canada
+            <div class="space20"></div>
+            <a href="mailto:first.last@email.com" class="nocolor"
+              >info@nanoqodee.com</a
+            ><br />
+            +1 (800) 361-2961
+          </address>
+        </div>
+        <!-- /.widget -->
+        <div class="widget">
+          <h3 class="widget-title">Learn More</h3>
+          <ul class="list-unstyled">
+            <li><a href="#" class="nocolor">Our Story</a></li>
+            <li><a href="#" class="nocolor">Terms of Use</a></li>
+            <li><a href="#" class="nocolor">Privacy Policy</a></li>
+            <li><a href="#" class="nocolor">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- /.widget -->
+        <div class="widget">
+          <h3 class="widget-title">Follow Us</h3>
+          <ul class="social social-mute social-s ml-auto">
+            <li>
+              <a href="#"><i class="jam jam-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="jam jam-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="jam jam-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="jam jam-vimeo"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="jam jam-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /.offcanvas-info -->
+      <section id="home" class="pt-0 mt-0">
+        <div class="space160"></div>
+        <div class="wrapper white-wrapper">
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col-lg-6">
+                <div>
+                  <figure>
+                    <img src="style/images/art/imac.png" alt="" />
+                  </figure>
+                  <img src="style/images/art/trust-logos.png" height="100" />
+                  <!--/.box -->
+                </div>
+              </div>
+              <!--/column -->
+              <div class="space100 d-none d-md-block d-lg-none"></div>
+              <div class="space80 d-md-none"></div>
+              <div class="col-lg-6 pl-60 pl-md-15">
+                <h2 class="section-title">Get My Website Audit</h2>
+                <p>
+                  Start your 7-Days Free trial and Get Site Audits, Backlink
+                  Data, Automated Reports & More
+                </p>
+                <div class="space30"></div>
+                <form
+                  id="contact-form"
+                  class="fields-white"
+                  method="post"
+                  action="contact/contact.php"
+                >
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <!-- step 1 -->
+                    <div class="form-row tab">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="website"
+                            class="form-control"
+                            placeholder="Website URL *"
+                            required="required"
+                            data-error="Website URL is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- step 2 -->
+                    <div class="form-row tab">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="First Name *"
+                            required="required"
+                            data-error="First Name is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            id="form_lastname"
+                            type="text"
+                            name="surname"
+                            class="form-control"
+                            placeholder="Last Name *"
+                            required="required"
+                            data-error="Last Name is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- step 3 -->
+                    <div class="form-row tab">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Email *"
+                            required="required"
+                            data-error="Valid email is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input
+                            id="form_phone"
+                            type="tel"
+                            name="phone"
+                            class="form-control"
+                            placeholder="Phone"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea
+                            id="form_message"
+                            name="message"
+                            class="form-control"
+                            placeholder="Message *"
+                            rows="4"
+                            hidden="hidden"
+                          >
+                            Nanoqode Form Data
+                          </textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12">
+                        <p class="text-muted">
+                          <strong>*</strong> These fields are required.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="overflow: auto">
+                    <div style="float: right">
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+                        Previous
+                      </button>
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Circles which indicates the steps of the form: -->
+                  <div style="text-align: center; margin-top: 40px">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                  </div>
+                </form>
+
+                <!-- /form -->
+              </div>
+              <!--/column -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="process">
+        <div class="container">
+          <div class="wrapper light-wrapper">
+            <div class="container inner">
+              <h2 class="section-title mb-40 text-center">
+                Trusted by thousands of agencies, in-house marketers, media
+                companies, freelancers
+              </h2>
+              <div
+                class="carousel owl-carousel clients"
+                data-margin="30"
+                data-loop="true"
+                data-dots="false"
+                data-autoplay="true"
+                data-autoplay-timeout="3000"
+                data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1140":{"items": "6"}}'
+              >
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com01.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com02.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com03.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com04.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com05.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com06.jpg" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com07.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com08.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com09.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com10.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com11.png" alt="" />
+                </div>
+                <div class="item pl-15 pr-15">
+                  <img src="style/images/art/com12.png" alt="" />
+                </div>
+              </div>
+              <!-- /.owl-carousel -->
+            </div>
+            <!-- /.container -->
+          </div>
+        </div>
+      </section>
+      <section id="process">
+        <div class="wrapper gray-wrapper">
+          <div class="container inner">
+            <h2 class="section-title text-center">What Our Clients Say</h2>
+            <div class="grid-view">
+              <div
+                class="carousel owl-carousel gap-small"
+                data-margin="0"
+                data-dots="true"
+                data-autoplay="false"
+                data-autoplay-timeout="5000"
+                data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "2"}, "1140":{"items": "3"}}'
+              >
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Sed posuere consectetur est at lobortis. Lorem ipsum
+                          dolor sit amet, consectetur adipiscing elit. Duis
+                          mollis, est non commodo luctus, nisi erat porttitor
+                          ligula."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t1.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Connor Gibson</h6>
+                            <span class="meta mb-0">Financial Analyst</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Vivamus sagittis lacus vel augue laoreet rutrum
+                          faucibus dolor auctor. Vestibulum id ligula porta
+                          felis euismod semper. Cras justo odio, dapibus ac
+                          facilisis."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t2.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Coriss Ambady</h6>
+                            <span class="meta mb-0">Marketing Specialist</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Duis mollis, est non commodo luctus, nisi erat
+                          porttitor ligula, eget lacinia odio sem nec elit. Cras
+                          justo odio, dapibus ac facilisis in, egestas eget quam
+                          venenatis."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t3.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Barclay Widerski</h6>
+                            <span class="meta mb-0">Sales Manager</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Curabitur blandit tempus porttitor. Integer posuere
+                          erat a ante venenatis dapibus posuere velit aliquet.
+                          Duis mollis, est non commodo luctus."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t4.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Nikolas Brooten</h6>
+                            <span class="meta mb-0">Investment Planner</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Aenean lacinia bibendum nulla sed consectetur. Cum
+                          sociis natoque penatibus et magnis dis parturient
+                          montes, nascetur ridiculus mus vestibulum."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t5.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Jackie Sanders</h6>
+                            <span class="meta mb-0">Sales Specialist</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+                <div class="item">
+                  <div class="item-inner">
+                    <div class="box bg-white shadow">
+                      <blockquote>
+                        <p>
+                          "Donec sed odio dui. Cras mattis consectetur purus sit
+                          amet fermentum. Aenean eu leo quam. Pellentesque
+                          ornare sem lacinia quam venenatis."
+                        </p>
+                        <div class="blockquote-details">
+                          <div class="img-blob blob1">
+                            <img src="style/images/art/t6.jpg" alt="" />
+                          </div>
+                          <div class="info">
+                            <h6 class="mb-0">Tina Geller</h6>
+                            <span class="meta mb-0">Financial Analyst</span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  <!-- /.item-inner -->
+                </div>
+                <!-- /.item -->
+              </div>
+              <!-- /.owl-carousel -->
+            </div>
+            <!-- /.grid-view -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </section>
+      <section>
+        <div class="wrapper light-wrapper">
+          <div class="container inner">
+            <h2 class="section-title mb-40 text-center">Pricing</h2>
+
+            <!--/.pricing-wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <section>
+        <div class="wrapper light-wrapper">
+          <div class="container inner">
+            <h2 class="section-title mb-40 text-center">
+              What You Need To Know
+            </h2>
+            <div class="row no-gutters">
+              <div class="col-lg-4 mb-0">
+                <ul class="nav nav-tabs nav-tabs-bg flex-column">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex flex-row align-items-center active"
+                      data-toggle="tab"
+                      href="#tab5-1"
+                    >
+                      <div class="icon icon-svg mr-25">
+                        <img src="style/images/icons/of-diagram.png" alt="" />
+                      </div>
+                      <div>
+                        <span>Why SEO</span>
+                        <p>Vestibulum ligula porta felis</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex flex-row align-items-center"
+                      data-toggle="tab"
+                      href="#tab5-2"
+                    >
+                      <div class="icon icon-svg mr-25">
+                        <img
+                          src="style/images/icons/st-payment-method.png"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <span>Our Process</span>
+                        <p>Vivamus sagittis lacus augue</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex flex-row align-items-center"
+                      data-toggle="tab"
+                      href="#tab5-3"
+                    >
+                      <div class="icon icon-svg mr-25">
+                        <img
+                          src="style/images/icons/ms-cloud-computing.png"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <span>Proof of Ranking</span>
+                        <p>Duis mollis commodo luctus</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link d-flex flex-row align-items-center"
+                      data-toggle="tab"
+                      href="#tab5-4"
+                    >
+                      <div class="icon icon-svg mr-25">
+                        <img src="style/images/icons/sm-setting.png" alt="" />
+                      </div>
+                      <div>
+                        <span>Real-Time Tracking</span>
+                        <p>Etiam porta sem malesuada</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- /.nav-tabs -->
+              </div>
+              <!--/column -->
+              <div class="col-lg-7 ml-auto">
+                <div class="tab-content">
+                  <div class="tab-pane show active" id="tab5-1">
+                    <figure>
+                      <img src="style/images/art/ui1.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab5-2">
+                    <figure>
+                      <img src="style/images/art/ui2.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab5-3">
+                    <figure>
+                      <img src="style/images/art/ui3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="tab-pane" id="tab5-4">
+                    <figure>
+                      <img src="style/images/art/ui4.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+                <!-- /.tab-content -->
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </section>
+      <div class="space30"></div>
+      <div
+        class="box shadow p-60 image-wrapper bg-full bg-image inverse-text rounded d-md-flex align-items-md-center justify-content-md-between"
+        data-image-src="style/images/art/bg9.jpg"
+      >
+        <h3 class="display-3 mb-0">
+          Convinced yet? Let's make something great together.
+        </h3>
+        <div class="space30 d-md-none"></div>
+        <a href="#" class="btn btn-white btn-strong-hover mb-0"
+          >Speak with an Expert</a
+        >
+      </div>
+      <section>
+        <div class="wrapper light-wrapper">
+          <div class="container inner">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="lead larger">
+              Have any questions? Reach out to us from our contact form and we
+              will get back to you shortly.
+            </p>
+            <div class="space40"></div>
+            <div class="row">
+              <div class="col-lg-7">
+                <form
+                  id="contact-form"
+                  class="fields-white"
+                  method="post"
+                  action="contact/contact.php"
+                >
+                  <div class="messages"></div>
+                  <div class="controls">
+                    <div class="form-row">
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-group">
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="First Name *"
+                            required="required"
+                            data-error="First Name is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-group">
+                          <input
+                            id="form_lastname"
+                            type="text"
+                            name="surname"
+                            class="form-control"
+                            placeholder="Last Name *"
+                            required="required"
+                            data-error="Last Name is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-group">
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Email *"
+                            required="required"
+                            data-error="Valid email is required."
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-group">
+                          <input
+                            id="form_phone"
+                            type="tel"
+                            name="phone"
+                            class="form-control"
+                            placeholder="Phone"
+                          />
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea
+                            id="form_message"
+                            name="message"
+                            class="form-control"
+                            placeholder="Message *"
+                            rows="4"
+                            required="required"
+                            data-error="Message is required."
+                          ></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <input
+                          type="submit"
+                          class="btn btn-send"
+                          value="Send message"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-12">
+                        <p class="text-muted">
+                          <strong>*</strong> These fields are required.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- /form -->
+              </div>
+              <!--/column -->
+              <div class="space30 d-none d-md-block d-lg-none"></div>
+              <div class="col-lg-4 offset-lg-1">
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon color-default fs-34 mr-25">
+                      <i class="icofont-location-pin"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h6 class="mb-5">Address</h6>
+                    <address>
+                      888 Sargent Ave Winnipeg, Manitoba, R3E 0C7,<br
+                        class="d-none d-lg-block"
+                      />
+                      Canada
+                    </address>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon color-default fs-34 mr-25">
+                      <i class="icofont-telephone"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h6 class="mb-5">Phone</h6>
+                    <p>+1 (800) 361-2961</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div>
+                    <div class="icon color-default fs-34 mr-25">
+                      <i class="icofont-mail-box"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h6 class="mb-5">E-mail</h6>
+                    <p>
+                      <a href="mailto:help@nanoqode.com" class="nocolor"
+                        >help@nanoqode.com</a
+                      >
+                      <br class="d-none d-md-block" /><a
+                        href="mailto:info@nanoqode.com"
+                        class="nocolor"
+                        >info@nanoqode.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </section>
+      <!-- /section -->
+
+      <footer class="light-wrapper">
+        <div class="container inner">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="widget">
+                <img
+                  src="#"
+                  srcset="style/images/logo.png 1x, style/images/logo@2x.png 2x"
+                  alt=""
+                />
+                <div class="space40"></div>
+                <p>
+                  © 2022 Nanoqode App. <br class="d-none d-lg-block" />All
+                  rights reserved.
+                </p>
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-3">
+              <div class="widget">
+                <h3 class="widget-title">Get in Touch</h3>
+                <address>
+                  888 Sargent Ave<br class="d-none d-lg-block" />
+                  Winnipeg, Manitoba, R3E 0C7,<br class="d-none d-lg-block" />
+                  Canada
+                </address>
+                <a href="mailto:help@nanoqode.com">help@nanoqode.com</a><br />
+                +1 (800) 361-2961
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-md-4 col-lg-3">
+              <div class="widget">
+                <h3 class="widget-title">Learn More</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="nocolor">About Us</a></li>
+                  <li><a href="#" class="nocolor">Our Story</a></li>
+                  <li><a href="#" class="nocolor">Projects</a></li>
+                  <li><a href="#" class="nocolor">Terms of Use</a></li>
+                  <li><a href="#" class="nocolor">Privacy Policy</a></li>
+                  <li><a href="#" class="nocolor">Contact Us</a></li>
+                </ul>
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="space30 d-none d-md-block d-lg-none"></div>
+            <div class="col-md-12 col-lg-3">
+              <div class="widget">
+                <h3 class="widget-title">Our Newsletter</h3>
+                <p>
+                  Subscribe to our newsletter to get our news & deals delivered
+                  to your inbox!
+                </p>
+                <div class="space10"></div>
+                <div class="newsletter-wrapper">
+                  <form
+                    action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate"
+                    target="_blank"
+                    novalidate
+                  >
+                    <div id="mc_embed_signup_scroll" class="input-group">
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="email form-control mb-0 mr-2 mb-sm-0"
+                        id="mce-EMAIL"
+                        placeholder="Email Address"
+                        required
+                      />
+                      <button
+                        type="submit"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="btn btn-rounded btn-default mr-0 mb-0 pull-right"
+                      >
+                        Join
+                      </button>
+                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div
+                        style="position: absolute; left: -5000px"
+                        aria-hidden="true"
+                      >
+                        <input
+                          type="text"
+                          name="b_ddc180777a163e0f9f66ee014_056957de28"
+                          tabindex="-1"
+                          value=""
+                        />
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.newsletter-wrapper -->
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+    </div>
+    <!-- /.content-wrapper -->
+    <script src="style/js/jquery.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="style/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="style/js/plugins.js"></script>
+    <script src="style/js/scripts.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/633ebe2d37898912e96d2eff/1gemhdp73";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+
+      let currentTab = 0; // Current tab is set to be the first tab (0)
+      showTab(currentTab); // Display the current tab
+
+      function showTab(n) {
+        // This function will display the specified tab of the form ...
+        let x = document.getElementsByClassName("tab");
+        x[n].style.display = "block";
+        // ... and fix the Previous/Next buttons:
+        if (n == 0) {
+          document.getElementById("prevBtn").style.display = "none";
+        } else {
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == x.length - 1) {
+          document.getElementById("nextBtn").innerHTML = "Submit";
+        } else {
+          document.getElementById("nextBtn").innerHTML = "Next";
+        }
+        // ... and run a function that will display the correct step indicator:
+        fixStepIndicator(n);
+      }
+
+      function nextPrev(n) {
+        // This function will figure out which tab to display
+        let x = document.getElementsByClassName("tab");
+        // Exit the function if any field in the current tab is invalid:
+        if (n == 1 && !validateForm()) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
+          // ... the form gets submitted:
+          document.getElementById("contact-form").submit();
+          return false;
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+      }
+
+      function validateForm() {
+        // This function deals with validation of the form fields
+        let x,
+          y,
+          i,
+          valid = true;
+        x = document.getElementsByClassName("tab");
+        y = x[currentTab].getElementsByTagName("input");
+        // A loop that checks every input field in the current tab:
+        for (i = 0; i < y.length; i++) {
+          // If a field is empty...
+          if (y[i].value == "") {
+            // add an "invalid" class to the field:
+            y[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
+          }
+        }
+        // If the valid status is true, mark the step as finished and valid:
+        if (valid) {
+          document.getElementsByClassName("step")[currentTab].className +=
+            " finish";
+        }
+        return valid; // return the valid status
+      }
+
+      function fixStepIndicator(n) {
+        // This function removes the "active" class of all steps...
+        let i,
+          x = document.getElementsByClassName("step");
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(" active", "");
+        }
+        //... and adds the "active" class on the current step:
+        x[n].className += " active";
+      }
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
