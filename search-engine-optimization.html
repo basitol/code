@@ -84,6 +84,71 @@
     .step.finish {
       background-color: #04aa6d;
     }
+
+    section.pricing {
+      background: #f3f4f7;
+    }
+
+    .pricing .card {
+      border: none;
+      border-radius: 1rem;
+      transition: all 0.2s;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing hr {
+      margin: 1.5rem 0;
+    }
+
+    .pricing .card-title {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+    }
+
+    .pricing .card-price {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .pricing .card-price .period {
+      font-size: 0.8rem;
+    }
+
+    .pricing ul li {
+      margin-bottom: 1rem;
+    }
+
+    .pricing .text-muted {
+      opacity: 0.7;
+    }
+
+    .pricing .btn {
+      font-size: 80%;
+      border-radius: 5rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+      padding: 1rem;
+      opacity: 0.7;
+      transition: all 0.2s;
+    }
+
+    /* Hover Effects on Card */
+
+    @media (min-width: 992px) {
+      .pricing .card:hover {
+        /* margin-top: -0.25rem; */
+        /* background color gradient on hover */
+        /* background: linear-gradient(0deg,  #2a44df,#5db7f3,); */
+        margin-bottom: 0.25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .pricing .card:hover .btn {
+        opacity: 1;
+      }
+    }
   </style>
 
   <body class="box-layout">
@@ -853,6 +918,150 @@
         </div>
         <!-- /.wrapper -->
       </section>
+
+      <!-- new price table -->
+      <section class="pricing py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Free Tier -->
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">
+                    Basic
+                  </h5>
+                  <h6 class="card-price text-center">
+                    $499<span class="period">/month</span>
+                  </h6>
+                  <hr />
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>150
+                      keywords optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>30
+                      pages optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>6
+                      Content, Outreach, UX or CRO Assets per quatrer
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>8
+                      Custom Dashboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >Phone Call leads and revenue tracking dahboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >7/24 Support
+                    </li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="#" class="btn btn-primary text-uppercase"
+                      >Subscribe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Plus Tier -->
+            <div class="col-lg-4">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">
+                    Premium
+                  </h5>
+                  <h6 class="card-price text-center">
+                    $699<span class="period">/month</span>
+                  </h6>
+                  <hr />
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>200
+                      keywords optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>40
+                      pages optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>8
+                      Content, Outreach, UX or CRO Assets per quatrer
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>8
+                      Custom Dashboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >Phone Call leads and revenue tracking dahboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >7/24 Support
+                    </li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="#" class="btn btn-primary text-uppercase"
+                      >Subscribe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pro Tier -->
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">
+                    Pro
+                  </h5>
+                  <h6 class="card-price text-center">
+                    $999<span class="period">/month</span>
+                  </h6>
+                  <hr />
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>300
+                      keywords optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>60
+                      pages optimized
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>24
+                      Content, Outreach, UX or CRO Assets per quatrer
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span>10
+                      Custom Dashboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >Phone Call leads and revenue tracking dahboards
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fas fa-check"></i></span
+                      >7/24 Support
+                    </li>
+                  </ul>
+                  <div class="d-grid">
+                    <a href="#" class="btn btn-primary text-uppercase"
+                      >Subscribe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div class="wrapper light-wrapper">
           <div class="container inner">
